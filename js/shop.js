@@ -1,7 +1,7 @@
 const SITE = {
-  phoneDisplay: "+421 900 000 000",
-  phoneTel: "+421900000000",
-  whatsapp: "421900000000",
+  phoneDisplay: "+421 952 535 501",
+  phoneTel: "+421952535501",
+  whatsapp: "421952535501",
   email: "info@art-stav.sk"
 };
 const CART_KEY = "artstav-cart";
