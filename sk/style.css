@@ -1425,3 +1425,11 @@ body:has(.cart-drawer:not([hidden])) .float { visibility: hidden; }
   .stone-gallery img { height: 170px; }
   .stone-gallery figcaption { font-size: 13px; }
 }
+
+/* Меню строго по центру шапки на всех страницах (29.10) */
+@media (min-width: 781px) {
+  .header { display: grid; grid-template-columns: 1fr auto 1fr; }
+  .header .logo { grid-column: 1; justify-self: start; }
+  .header .nav { grid-column: 2; justify-self: center; }
+  .header .header-tools { grid-column: 3; justify-self: end; }
+}
