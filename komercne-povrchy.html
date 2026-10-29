@@ -73,6 +73,42 @@
       </figure>
     </section>
 
+    <section class="section" id="galeria" aria-labelledby="gallery-title">
+      <div class="wrap">
+        <div class="section-head">
+          <h2 id="gallery-title">Как выглядят эпоксидные и полиуретановые полы</h2>
+          <p>Гаражи, мастерские, склады и паркинги. Нажмите на фото, чтобы увеличить.</p>
+        </div>
+        <div class="stone-gallery">
+          <figure>
+            <a href="assets/img/epoxid-garaz.jpg" class="sg-open" aria-label="Увеличить: Гараж"><picture><source type="image/webp" srcset="assets/img/epoxid-garaz.webp"><img src="assets/img/epoxid-garaz.jpg" alt="Пол с декоративной крошкой в гараже" style="object-position: center 60%" loading="lazy" decoding="async"></picture></a>
+            <figcaption>Гараж</figcaption>
+          </figure>
+          <figure>
+            <a href="assets/img/ukazka-12-cipsy.jpg" class="sg-open" aria-label="Увеличить: Крупный план с крошкой"><picture><source type="image/webp" srcset="assets/img/ukazka-12-cipsy.webp"><img src="assets/img/ukazka-12-cipsy.jpg" alt="Крупный план пола с декоративной крошкой" style="object-position: center 50%" loading="lazy" decoding="async"></picture></a>
+            <figcaption>Крупный план с крошкой</figcaption>
+          </figure>
+          <figure>
+            <a href="assets/img/ukazka-14-dielna.jpg" class="sg-open" aria-label="Увеличить: Мастерская"><picture><source type="image/webp" srcset="assets/img/ukazka-14-dielna.webp"><img src="assets/img/ukazka-14-dielna.jpg" alt="Полиуретановый пол в мастерской" style="object-position: center 60%" loading="lazy" decoding="async"></picture></a>
+            <figcaption>Мастерская</figcaption>
+          </figure>
+          <figure>
+            <a href="assets/img/ukazka-16-sklad.jpg" class="sg-open" aria-label="Увеличить: Склад"><picture><source type="image/webp" srcset="assets/img/ukazka-16-sklad.webp"><img src="assets/img/ukazka-16-sklad.jpg" alt="Пол на складе" style="object-position: center 60%" loading="lazy" decoding="async"></picture></a>
+            <figcaption>Склад</figcaption>
+          </figure>
+          <figure>
+            <a href="assets/img/epoxid-parkovanie.jpg" class="sg-open" aria-label="Увеличить: Паркинг"><picture><source type="image/webp" srcset="assets/img/epoxid-parkovanie.webp"><img src="assets/img/epoxid-parkovanie.jpg" alt="Гладкий пол в паркинге" style="object-position: center 60%" loading="lazy" decoding="async"></picture></a>
+            <figcaption>Паркинг</figcaption>
+          </figure>
+          <figure>
+            <a href="assets/img/epoxid-dvor.jpg" class="sg-open" aria-label="Увеличить: Площадка у здания"><picture><source type="image/webp" srcset="assets/img/epoxid-dvor.webp"><img src="assets/img/epoxid-dvor.jpg" alt="Наружная площадка у здания" style="object-position: center 60%" loading="lazy" decoding="async"></picture></a>
+            <figcaption>Площадка у здания</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+    <div class="sg-lightbox" hidden><button type="button" class="sg-close" aria-label="Закрыть">&times;</button><img alt=""></div>
+
     <section class="section" id="riesenie" aria-labelledby="solution-title">
       <div class="wrap svc-split">
         <div>
@@ -151,24 +187,6 @@
       </div>
     </section>
 
-    <section class="section" id="galeria" aria-labelledby="gallery-title" style="padding-top: 0">
-      <div class="wrap">
-        <div class="section-head">
-          <h2 id="gallery-title">Как может выглядеть покрытие</h2>
-          <p>Технический пол в гараже и наружная площадка.</p>
-        </div>
-        <div class="svc-gallery">
-          <figure>
-            <picture><source type="image/webp" srcset="assets/img/epoxid-garaz.webp 768w" sizes="(max-width: 800px) 100vw, 48vw"><img src="assets/img/epoxid-garaz.jpg" alt="Тёмный технический пол в гараже" style="object-position: center 70%" width="768" height="1024" loading="lazy" decoding="async"></picture>
-            <figcaption>Гараж: технический пол</figcaption>
-          </figure>
-          <figure>
-            <picture><source type="image/webp" srcset="assets/img/epoxid-dvor-800.webp 800w, assets/img/epoxid-dvor.webp 1024w" sizes="(max-width: 800px) 100vw, 48vw"><img src="assets/img/epoxid-dvor.jpg" alt="Наружная площадка с каменным покрытием у здания" style="object-position: center 70%" width="1024" height="460" loading="lazy" decoding="async"></picture>
-            <figcaption>Наружная площадка у здания</figcaption>
-          </figure>
-        </div>
-      </div>
-    </section>
 
     <section class="section" id="otazky" aria-labelledby="faq-title" style="padding-top: 0">
       <div class="wrap">
@@ -459,6 +477,7 @@
   </div>
 
   <script src="js/service.js?v=7"></script>
+<script>(function(){var lb=document.querySelector('.sg-lightbox');if(!lb)return;var im=lb.querySelector('img');document.querySelectorAll('.sg-open').forEach(function(a){a.addEventListener('click',function(e){e.preventDefault();im.src=a.getAttribute('href');im.alt=a.querySelector('img').alt;lb.hidden=false;});});function c(){lb.hidden=true;im.src='';}lb.addEventListener('click',function(e){if(e.target!==im)c();});document.addEventListener('keydown',function(e){if(e.key==='Escape')c();});})();</script>
 <div class="lang-sw" style="position:fixed;left:12px;bottom:12px;z-index:999;background:#111;color:#fff;border-radius:20px;padding:6px 12px;font:600 13px/1 sans-serif;box-shadow:0 2px 8px rgba(0,0,0,.3)"><b style="color:#d6b98c">RU</b> | <a href="sk/komercne-povrchy.html" style="color:#fff">SK</a></div>
 </body>
 </html>

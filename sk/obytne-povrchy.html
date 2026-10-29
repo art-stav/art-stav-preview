@@ -73,6 +73,42 @@
       </figure>
     </section>
 
+    <section class="section" id="galeria" aria-labelledby="gallery-title">
+      <div class="wrap">
+        <div class="section-head">
+          <h2 id="gallery-title">Ako vyzerá mikrocement</h2>
+          <p>Podlahy, steny, kúpeľne a schody. Kliknutím fotografiu zväčšíte.</p>
+        </div>
+        <div class="stone-gallery">
+          <figure>
+            <a href="assets/img/ukazka-06-obyvacka.jpg" class="sg-open" aria-label="Zväčšiť: Obývačka"><picture><source type="image/webp" srcset="assets/img/ukazka-06-obyvacka.webp"><img src="assets/img/ukazka-06-obyvacka.jpg" alt="Podlaha z mikrocementu v obývačke" style="object-position: center 60%" loading="lazy" decoding="async"></picture></a>
+            <figcaption>Obývačka</figcaption>
+          </figure>
+          <figure>
+            <a href="assets/img/ukazka-01-schody.jpg" class="sg-open" aria-label="Zväčšiť: Schody"><picture><source type="image/webp" srcset="assets/img/ukazka-01-schody.webp"><img src="assets/img/ukazka-01-schody.jpg" alt="Schody z mikrocementu" style="object-position: center 50%" loading="lazy" decoding="async"></picture></a>
+            <figcaption>Schody</figcaption>
+          </figure>
+          <figure>
+            <a href="assets/img/ukazka-05-kupelna.jpg" class="sg-open" aria-label="Zväčšiť: Kúpeľňa"><picture><source type="image/webp" srcset="assets/img/ukazka-05-kupelna.webp"><img src="assets/img/ukazka-05-kupelna.jpg" alt="Kúpeľňa so stenami z mikrocementu" style="object-position: center 50%" loading="lazy" decoding="async"></picture></a>
+            <figcaption>Kúpeľňa</figcaption>
+          </figure>
+          <figure>
+            <a href="assets/img/ukazka-04-stena.jpg" class="sg-open" aria-label="Zväčšiť: Stena"><picture><source type="image/webp" srcset="assets/img/ukazka-04-stena.webp"><img src="assets/img/ukazka-04-stena.jpg" alt="Stena z mikrocementu v obývačke" style="object-position: center 50%" loading="lazy" decoding="async"></picture></a>
+            <figcaption>Stena</figcaption>
+          </figure>
+          <figure>
+            <a href="assets/img/mikrocement-interier-1.jpg" class="sg-open" aria-label="Zväčšiť: Podlaha v interiéri"><picture><source type="image/webp" srcset="assets/img/mikrocement-interier-1.webp"><img src="assets/img/mikrocement-interier-1.jpg" alt="Sivá podlaha z mikrocementu v interiéri" style="object-position: center 60%" loading="lazy" decoding="async"></picture></a>
+            <figcaption>Podlaha v interiéri</figcaption>
+          </figure>
+          <figure>
+            <a href="assets/img/ukazka-03-detail.jpg" class="sg-open" aria-label="Zväčšiť: Detail povrchu"><picture><source type="image/webp" srcset="assets/img/ukazka-03-detail.webp"><img src="assets/img/ukazka-03-detail.jpg" alt="Detail povrchu mikrocementu" style="object-position: center 50%" loading="lazy" decoding="async"></picture></a>
+            <figcaption>Detail povrchu</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+    <div class="sg-lightbox" hidden><button type="button" class="sg-close" aria-label="Zavrieť">&times;</button><img alt=""></div>
+
     <section class="section" id="riesenie" aria-labelledby="solution-title">
       <div class="wrap svc-split">
         <div>
@@ -150,24 +186,6 @@
       </div>
     </section>
 
-    <section class="section" id="galeria" aria-labelledby="gallery-title" style="padding-top: 0">
-      <div class="wrap">
-        <div class="section-head">
-          <h2 id="gallery-title">Ako môže povrch vyzerať</h2>
-          <p>Podlahy z mikrocementu v interiéri.</p>
-        </div>
-        <div class="svc-gallery">
-          <figure>
-            <picture><source type="image/webp" srcset="assets/img/mikrocement-interier-1.webp 768w" sizes="(max-width: 800px) 100vw, 48vw"><img src="assets/img/mikrocement-interier-1.jpg" alt="Sivá podlaha z mikrocementu pri okne" style="object-position: center 72%" width="768" height="1024" loading="lazy" decoding="async"></picture>
-            <figcaption>Interiér — podlaha z mikrocementu</figcaption>
-          </figure>
-          <figure>
-            <picture><source type="image/webp" srcset="assets/img/mikrocement-interier-2.webp 768w" sizes="(max-width: 800px) 100vw, 48vw"><img src="assets/img/mikrocement-interier-2.jpg" alt="Hladká sivá podlaha z mikrocementu" style="object-position: center 62%" width="768" height="1024" loading="lazy" decoding="async"></picture>
-            <figcaption>Interiér — detail podlahy</figcaption>
-          </figure>
-        </div>
-      </div>
-    </section>
 
     <section class="section" id="otazky" aria-labelledby="faq-title" style="padding-top: 0">
       <div class="wrap">
@@ -458,6 +476,7 @@
   </div>
 
   <script src="js/service.js?v=7"></script>
+<script>(function(){var lb=document.querySelector('.sg-lightbox');if(!lb)return;var im=lb.querySelector('img');document.querySelectorAll('.sg-open').forEach(function(a){a.addEventListener('click',function(e){e.preventDefault();im.src=a.getAttribute('href');im.alt=a.querySelector('img').alt;lb.hidden=false;});});function c(){lb.hidden=true;im.src='';}lb.addEventListener('click',function(e){if(e.target!==im)c();});document.addEventListener('keydown',function(e){if(e.key==='Escape')c();});})();</script>
 <div class="lang-sw" style="position:fixed;left:12px;bottom:12px;z-index:999;background:#111;color:#fff;border-radius:20px;padding:6px 12px;font:600 13px/1 sans-serif;box-shadow:0 2px 8px rgba(0,0,0,.3)"><a href="../obytne-povrchy.html" style="color:#fff">RU</a> | <b style="color:#d6b98c">SK</b></div>
 </body>
 </html>
