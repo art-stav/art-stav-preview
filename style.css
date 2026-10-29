@@ -1433,3 +1433,6 @@ body:has(.cart-drawer:not([hidden])) .float { visibility: hidden; }
   .header .nav { grid-column: 2; justify-self: center; }
   .header .header-tools { grid-column: 3; justify-self: end; }
 }
+
+/* «Услуги» на одной линии с остальными пунктами меню (29.10) */
+.nav-drop { display: flex; align-items: center; }
