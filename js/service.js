@@ -36,7 +36,7 @@ function closeMenu() {
   drop.classList.remove("is-open");
   dropBtn.setAttribute("aria-expanded", "false");
   menuToggle.setAttribute("aria-expanded", "false");
-  menuToggle.setAttribute("aria-label", "Otvoriť menu");
+  menuToggle.setAttribute("aria-label", "Открыть меню");
   lockScroll(quiz && !quiz.hidden);
 }
 
@@ -47,7 +47,7 @@ menuToggle.addEventListener("click", () => {
   }
   nav.classList.add("is-open");
   menuToggle.setAttribute("aria-expanded", "true");
-  menuToggle.setAttribute("aria-label", "Zavrieť menu");
+  menuToggle.setAttribute("aria-label", "Закрыть меню");
   lockScroll(true);
 });
 
@@ -100,10 +100,10 @@ if (leadForm) leadForm.addEventListener("submit", (event) => {
   const service = String(data.get("service") || "").trim();
   const contact = String(data.get("contact") || "").trim();
   if (!name || !phoneOk(phone) || !city || !service || !contact) {
-    formError.textContent = "Vyplňte meno, telefón, mesto alebo obec, požadovaný povrch a spôsob kontaktu.";
+    formError.textContent = "Заполните имя, телефон, город или населённый пункт, нужное покрытие и способ связи.";
     return;
   }
-  formError.textContent = "Odoslanie sa nepodarilo. Skúste to znova.";
+  formError.textContent = "Не удалось отправить. Попробуйте ещё раз.";
 });
 
 const quiz = document.getElementById("quiz");
@@ -124,7 +124,7 @@ function showQuizStep(index) {
     step.hidden = Number(step.dataset.step) !== index;
   });
   quizBack.hidden = index === 0;
-  quizNext.textContent = index === quizSteps.length - 1 ? "Odoslať dopyt" : "Ďalej";
+  quizNext.textContent = index === quizSteps.length - 1 ? "Отправить запрос" : "Далее";
   if (quizCount) quizCount.textContent = (index + 1) + "/" + quizSteps.length;
   quizProgress.querySelectorAll("i").forEach((bar, i) => bar.classList.toggle("is-on", i <= index));
   quizError.textContent = "";
@@ -177,23 +177,23 @@ function quizValue(name) {
 
 quizNext.addEventListener("click", () => {
   if (quizStep === 0 && !quizValue("object")) {
-    quizError.textContent = "Vyberte, kde plánujete nový povrch.";
+    quizError.textContent = "Выберите, где планируете новое покрытие.";
     return;
   }
   if (quizStep === 1 && !quizValue("coating")) {
-    quizError.textContent = "Vyberte povrch, alebo možnosť poradenstva.";
+    quizError.textContent = "Выберите покрытие или вариант с консультацией.";
     return;
   }
   if (quizStep === 2 && !quizValue("city")) {
-    quizError.textContent = "Vyplňte mesto alebo obec.";
+    quizError.textContent = "Заполните город или населённый пункт.";
     return;
   }
   if (quizStep === 3) {
     if (!quizValue("name") || !phoneOk(quizValue("phone")) || !quizValue("contact")) {
-      quizError.textContent = "Vyplňte meno, telefón a spôsob kontaktu.";
+      quizError.textContent = "Заполните имя, телефон и способ связи.";
       return;
     }
-    quizError.textContent = "Odoslanie sa nepodarilo. Skúste to znova.";
+    quizError.textContent = "Не удалось отправить. Попробуйте ещё раз.";
     return;
   }
   showQuizStep(quizStep + 1);

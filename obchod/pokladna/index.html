@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="sk">
+<html lang="ru">
 <head>
 <meta name="robots" content="noindex, nofollow">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Objednávka | ART STAV</title>
-  <meta name="description" content="Objednávka tovaru ART STAV. Platbu dokončíte na stránke Stripe.">
+  <title>Заказ | ART STAV</title>
+  <meta name="description" content="Заказ товара ART STAV. Оплату вы завершите на странице Stripe.">
   <link rel="canonical" href="https://art-stav.sk/obchod/pokladna/">
   <meta name="theme-color" content="#111111">
   <link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml">
@@ -15,101 +15,101 @@
   <link rel="stylesheet" href="../../style.css?v=17">
 </head>
 <body>
-  <a class="skip" href="#obsah">Prejsť na obsah</a>
+  <a class="skip" href="#obsah">Перейти к содержанию</a>
   <div class="topbar">
-    <span class="topbar-place">Bratislava a okolie</span>
+    <span class="topbar-place">Братислава и окрестности</span>
     <div class="topbar-links">
       <a data-phone href="tel:+421900000000">+421 900 000 000</a>
-      <a href="../../kontakt.html">Napísať</a>
+      <a href="../../kontakt.html">Написать</a>
       <a data-whatsapp href="https://wa.me/421900000000" target="_blank" rel="noopener">WhatsApp</a>
     </div>
   </div>
   <header class="header" id="header">
-    <a class="logo" href="../../index.html" aria-label="ART STAV, domov">
+    <a class="logo" href="../../index.html" aria-label="ART STAV, главная">
       <span class="logo-box" aria-hidden="true"><span>ART</span><span>STAV</span></span>
     </a>
-    <nav class="nav" id="nav" aria-label="Hlavné menu">
-      <a href="../../index.html">Domov</a>
+    <nav class="nav" id="nav" aria-label="Главное меню">
+      <a href="../../index.html">Главная</a>
       <div class="nav-drop">
         <button class="nav-btn" type="button" aria-expanded="false" aria-controls="sluzby-menu">
-          Služby
+          Услуги
           <svg width="10" height="6" viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.2"/></svg>
         </button>
         <div class="dropdown" id="sluzby-menu">
-          <a href="../../obytne-povrchy.html">Mikrocement</a>
-          <a href="../../vonkajsie-podlahy.html">Kamenný koberec</a>
-          <a href="../../komercne-povrchy.html">Epoxidové a polyuretánové nátery</a>
+          <a href="../../obytne-povrchy.html">Микроцемент</a>
+          <a href="../../vonkajsie-podlahy.html">Каменный ковёр</a>
+          <a href="../../komercne-povrchy.html">Эпоксидные и полиуретановые покрытия</a>
         </div>
       </div>
-      <a class="is-current" href="../" aria-current="page">Obchod</a>
-      <a href="../../kontakt.html">Kontakt</a>
-      <a class="btn is-in-menu" href="../../kontakt.html">Nezáväzná kalkulácia</a>
+      <a class="is-current" href="../" aria-current="page">Магазин</a>
+      <a href="../../kontakt.html">Контакты</a>
+      <a class="btn is-in-menu" href="../../kontakt.html">Бесплатный расчёт</a>
     </nav>
     <div class="header-tools">
-      <a class="btn" href="../../kontakt.html">Nezáväzná kalkulácia</a>
-      <button class="menu-toggle" type="button" id="menu-toggle" aria-expanded="false" aria-controls="nav" aria-label="Otvoriť menu"><span></span></button>
+      <a class="btn" href="../../kontakt.html">Бесплатный расчёт</a>
+      <button class="menu-toggle" type="button" id="menu-toggle" aria-expanded="false" aria-controls="nav" aria-label="Открыть меню"><span></span></button>
     </div>
   </header>
   <main class="page" id="obsah">
     <div class="wrap">
-      <p class="eyebrow"><a href="../">Obchod</a></p>
-      <h1>Objednávka</h1>
+      <p class="eyebrow"><a href="../">Магазин</a></p>
+      <h1>Заказ</h1>
       <div class="checkout-grid">
         <form class="form" id="checkout-form" novalidate>
           <label class="field">
-            <span>Meno <i class="req">*</i></span>
+            <span>Имя <i class="req">*</i></span>
             <input name="name" type="text" autocomplete="name" required>
           </label>
           <label class="field">
-            <span>Telefón <i class="req">*</i></span>
+            <span>Телефон <i class="req">*</i></span>
             <input name="phone" type="tel" autocomplete="tel" inputmode="tel" required>
           </label>
           <label class="field">
-            <span>E-mail <span class="optional">(nepovinné)</span></span>
+            <span>E-mail <span class="optional">(необязательно)</span></span>
             <input name="email" type="email" autocomplete="email">
           </label>
           <label class="field">
-            <span>Ulica a číslo <i class="req">*</i></span>
+            <span>Улица и номер дома <i class="req">*</i></span>
             <input name="street" type="text" autocomplete="street-address" required>
           </label>
           <label class="field">
-            <span>PSČ <i class="req">*</i></span>
+            <span>Почтовый индекс <i class="req">*</i></span>
             <input name="zip" type="text" autocomplete="postal-code" inputmode="numeric" required>
           </label>
           <label class="field">
-            <span>Mesto alebo obec <i class="req">*</i></span>
+            <span>Город или населённый пункт <i class="req">*</i></span>
             <input name="city" type="text" autocomplete="address-level2" required>
           </label>
           <label class="field">
-            <span>Poznámka k adrese <span class="optional">(nepovinné)</span></span>
+            <span>Примечание к адресу <span class="optional">(необязательно)</span></span>
             <textarea name="note" rows="3"></textarea>
           </label>
           <fieldset class="pay-set">
-            <legend>Spôsob dopravy <i class="req">*</i></legend>
+            <legend>Способ доставки <i class="req">*</i></legend>
             <label class="pay-choice">
               <input type="radio" name="delivery" value="Kuriér" checked required>
-              <span>Kuriér</span>
+              <span>Курьер</span>
             </label>
           </fieldset>
-          <p>Platbu dokončíte na zabezpečenej stránke Stripe. Karta, Apple Pay a Google Pay sa zobrazia podľa zariadenia. Teraz ide o testovaciu platbu, peniaze sa nestrhávajú.</p>
+          <p>Оплату вы завершите на защищённой странице Stripe. Карта, Apple Pay и Google Pay появятся в зависимости от устройства. Сейчас это тестовый платёж, деньги не списываются.</p>
           <p class="pay-hold" id="pay-hold" tabindex="-1" hidden></p>
           <p class="form-error" id="checkout-error" role="alert"></p>
-          <button class="btn" type="submit">Zaplatiť</button>
+          <button class="btn" type="submit">Оплатить</button>
         </form>
         <aside class="checkout-card" id="checkout-card">
-          <h2>Košík</h2>
+          <h2>Корзина</h2>
           <div id="checkout-summary"></div>
           <div id="checkout-extra">
             <form class="promo" id="checkout-promo">
               <label class="promo-field">
-                <span class="visually-hidden">Promokód</span>
-                <input data-promo-input type="text" placeholder="Promokód" autocomplete="off" maxlength="40">
+                <span class="visually-hidden">Промокод</span>
+                <input data-promo-input type="text" placeholder="Промокод" autocomplete="off" maxlength="40">
               </label>
-              <button class="btn btn-beige" type="submit">Použiť</button>
+              <button class="btn btn-beige" type="submit">Применить</button>
             </form>
             <p class="promo-note" data-promo-note hidden></p>
-            <p class="checkout-line"><strong>Spolu</strong><strong id="checkout-sum">0 €</strong></p>
-            <p class="price-note">Doprava a daň sú zahrnuté v cene.</p>
+            <p class="checkout-line"><strong>Итого</strong><strong id="checkout-sum">0 €</strong></p>
+            <p class="price-note">Доставка и налог включены в цену.</p>
           </div>
         </aside>
       </div>
@@ -119,34 +119,34 @@
     <div class="wrap footer-grid">
       <div>
         <a class="logo" href="../../index.html"><span class="logo-box" aria-hidden="true"><span>ART</span><span>STAV</span></span></a>
-        <h2>Bezšvové povrchy pre dom aj prevádzku.</h2>
+        <h2>Бесшовные покрытия для дома и бизнеса.</h2>
       </div>
       <div>
-        <p class="eyebrow">Menu</p>
+        <p class="eyebrow">ÐÐµÐ½Ñ</p>
         <ul>
-          <li><a href="../../obytne-povrchy.html">Mikrocement</a></li>
-          <li><a href="../../vonkajsie-podlahy.html">Kamenný koberec</a></li>
-          <li><a href="../../komercne-povrchy.html">Epoxidové a polyuretánové nátery</a></li>
-          <li><a href="../">Obchod</a></li>
-          <li><a href="../../kontakt.html">Kontakt</a></li>
+          <li><a href="../../obytne-povrchy.html">Микроцемент</a></li>
+          <li><a href="../../vonkajsie-podlahy.html">Каменный ковёр</a></li>
+          <li><a href="../../komercne-povrchy.html">Эпоксидные и полиуретановые покрытия</a></li>
+          <li><a href="../">Магазин</a></li>
+          <li><a href="../../kontakt.html">Контакты</a></li>
         </ul>
       </div>
       <div>
-        <p class="eyebrow">Kontakt</p>
+        <p class="eyebrow">Контакты</p>
         <p><a data-phone href="tel:+421900000000">+421 900 000 000</a></p>
         <p><a data-email href="mailto:info@art-stav.sk">info@art-stav.sk</a></p>
-        <p>Bratislava, Slovensko</p>
-        <p>IČO doplníme pred spustením</p>
-        <p>DIČ: 2123409244</p>
+        <p>Братислава, Словакия</p>
+        <p>IČO (рег. номер) добавим перед запуском</p>
+        <p>DIČ (налоговый номер): 2123409244</p>
       </div>
     </div>
     <div class="wrap legal">
       <span>© 2026 ART STAV</span>
       <div class="legal-links">
-        <a href="../../ochrana-sukromia.html">Informácie o spracúvaní osobných údajov</a>
-        <a href="../../obchodne-podmienky.html">Obchodné podmienky</a>
-        <a href="../../doprava-a-platba.html">Doprava a platba</a>
-        <a href="../../vratenie-a-vymena.html">Vrátenie a výmena</a>
+        <a href="../../ochrana-sukromia.html">Обработка персональных данных</a>
+        <a href="../../obchodne-podmienky.html">Условия продажи</a>
+        <a href="../../doprava-a-platba.html">Доставка и оплата</a>
+        <a href="../../vratenie-a-vymena.html">Возврат и обмен</a>
       </div>
     </div>
   </footer>

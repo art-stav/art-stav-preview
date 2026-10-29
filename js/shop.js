@@ -45,7 +45,7 @@ function closeMenu() {
   drop.classList.remove("is-open");
   dropBtn.setAttribute("aria-expanded", "false");
   menuToggle.setAttribute("aria-expanded", "false");
-  menuToggle.setAttribute("aria-label", "Otvoriť menu");
+  menuToggle.setAttribute("aria-label", "Открыть меню");
   if (!document.getElementById("cart-drawer") || document.getElementById("cart-drawer").hidden) lockScroll(false);
 }
 
@@ -56,7 +56,7 @@ menuToggle.addEventListener("click", () => {
   }
   nav.classList.add("is-open");
   menuToggle.setAttribute("aria-expanded", "true");
-  menuToggle.setAttribute("aria-label", "Zavrieť menu");
+  menuToggle.setAttribute("aria-label", "Закрыть меню");
   lockScroll(true);
 });
 
@@ -124,7 +124,7 @@ if (tools && !document.getElementById("cart-open")) {
   opener.type = "button";
   opener.id = "cart-open";
   opener.className = "cart-open";
-  opener.setAttribute("aria-label", "Košík");
+  opener.setAttribute("aria-label", "Корзина");
   opener.innerHTML = '<svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 7h12l-1 12H7L6 7z" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M9 7a3 3 0 0 1 6 0" fill="none" stroke="currentColor" stroke-width="1.6"/></svg><span class="cart-count" id="cart-count" hidden>0</span>';
   tools.insertBefore(opener, menuToggle);
 }
@@ -133,7 +133,7 @@ const drawer = document.createElement("div");
 drawer.className = "cart-drawer";
 drawer.id = "cart-drawer";
 drawer.hidden = true;
-drawer.innerHTML = '<div class="cart-panel" role="dialog" aria-modal="true" aria-labelledby="cart-title"><div class="cart-head"><h2 id="cart-title">Košík</h2><button class="cart-close" type="button" data-cart-close aria-label="Zavrieť">×</button></div><p class="cart-added" id="cart-added" hidden>Tovar bol pridaný do košíka.</p><div id="cart-lines"></div><form class="promo" id="cart-promo"><label class="promo-field"><span class="visually-hidden">Promokód</span><input data-promo-input type="text" placeholder="Promokód" autocomplete="off" maxlength="40"></label><button class="btn btn-beige" type="submit">Použiť</button></form><p class="promo-note" data-promo-note hidden></p><div class="cart-foot"><p class="cart-total"><span>Spolu</span><strong id="cart-sum">0 €</strong></p><p class="price-note" id="cart-price-note">Doprava a daň sú zahrnuté v cene.</p><a class="btn" id="cart-checkout" href="#">Objednať</a></div></div>';
+drawer.innerHTML = '<div class="cart-panel" role="dialog" aria-modal="true" aria-labelledby="cart-title"><div class="cart-head"><h2 id="cart-title">Корзина</h2><button class="cart-close" type="button" data-cart-close aria-label="Закрыть">×</button></div><p class="cart-added" id="cart-added" hidden>Товар добавлен в корзину.</p><div id="cart-lines"></div><form class="promo" id="cart-promo"><label class="promo-field"><span class="visually-hidden">Промокод</span><input data-promo-input type="text" placeholder="Промокод" autocomplete="off" maxlength="40"></label><button class="btn btn-beige" type="submit">Применить</button></form><p class="promo-note" data-promo-note hidden></p><div class="cart-foot"><p class="cart-total"><span>Итого</span><strong id="cart-sum">0 €</strong></p><p class="price-note" id="cart-price-note">Доставка и налог включены в цену.</p><a class="btn" id="cart-checkout" href="#">Оформить заказ</a></div></div>';
 document.body.appendChild(drawer);
 
 const cartLines = document.getElementById("cart-lines");
@@ -155,7 +155,7 @@ function paintCart() {
     cartCountEl.hidden = true;
   }
   if (!items.length) {
-    cartLines.innerHTML = '<p class="cart-empty">Košík je prázdny.</p>';
+    cartLines.innerHTML = '<p class="cart-empty">Корзина пуста.</p>';
     cartSum.textContent = money(0);
     cartCheckout.hidden = true;
     cartPromo.hidden = true;
@@ -166,7 +166,7 @@ function paintCart() {
   cartCheckout.hidden = false;
   cartPromo.hidden = false;
   cartPriceNote.hidden = false;
-  cartLines.innerHTML = items.map((item) => '<article class="cart-line"><img src="' + rootPrefix() + esc(item.image) + '" alt=""><div class="cart-main"><div><strong>' + esc(item.name) + '</strong><p>' + esc(item.meta) + '</p><div class="qty"><button type="button" data-qty="-1" data-id="' + esc(item.id) + '" aria-label="Menej">−</button><span>' + item.qty + '</span><button type="button" data-qty="1" data-id="' + esc(item.id) + '" aria-label="Viac">+</button></div></div><p class="cart-price">' + money(itemPrice(item) * item.qty) + '</p></div></article>').join("");
+  cartLines.innerHTML = items.map((item) => '<article class="cart-line"><img src="' + rootPrefix() + esc(item.image) + '" alt=""><div class="cart-main"><div><strong>' + esc(item.name) + '</strong><p>' + esc(item.meta) + '</p><div class="qty"><button type="button" data-qty="-1" data-id="' + esc(item.id) + '" aria-label="Меньше">−</button><span>' + item.qty + '</span><button type="button" data-qty="1" data-id="' + esc(item.id) + '" aria-label="Больше">+</button></div></div><p class="cart-price">' + money(itemPrice(item) * item.qty) + '</p></div></article>').join("");
   cartSum.textContent = money(cartTotal(items));
   paintPromo();
 }
@@ -223,7 +223,7 @@ function paintCheckout() {
   const items = readCart();
   const form = document.getElementById("checkout-form");
   if (!items.length) {
-    box.innerHTML = '<p class="cart-empty">Košík je prázdny.</p><a class="btn" href="' + rootPrefix() + 'obchod/">Do obchodu</a>';
+    box.innerHTML = '<p class="cart-empty">Корзина пуста.</p><a class="btn" href="' + rootPrefix() + 'obchod/">В магазин</a>';
     if (form) form.hidden = true;
     const extra = document.getElementById("checkout-extra");
     if (extra) extra.hidden = true;
@@ -232,7 +232,7 @@ function paintCheckout() {
   if (form) form.hidden = false;
   const extra = document.getElementById("checkout-extra");
   if (extra) extra.hidden = false;
-  box.innerHTML = items.map((item) => '<article class="checkout-item"><img src="' + rootPrefix() + esc(item.image) + '" alt=""><div class="cart-main"><div><strong>' + esc(item.name) + '</strong><p>' + esc(item.meta) + '</p><p>' + item.qty + ' ks</p></div><p class="cart-price">' + money(itemPrice(item) * item.qty) + '</p></div></article>').join("");
+  box.innerHTML = items.map((item) => '<article class="checkout-item"><img src="' + rootPrefix() + esc(item.image) + '" alt=""><div class="cart-main"><div><strong>' + esc(item.name) + '</strong><p>' + esc(item.meta) + '</p><p>' + item.qty + ' шт.</p></div><p class="cart-price">' + money(itemPrice(item) * item.qty) + '</p></div></article>').join("");
   const sum = document.getElementById("checkout-sum");
   if (sum) sum.textContent = money(cartTotal(items));
 }
@@ -241,7 +241,7 @@ const checkoutForm = document.getElementById("checkout-form");
 if (checkoutForm) {
   const error = document.getElementById("checkout-error");
   if (new URLSearchParams(location.search).get("platba") === "zrusena") {
-    error.textContent = "Platba bola zrušená. Košík ostal uložený.";
+    error.textContent = "Оплата отменена. Корзина сохранена.";
   }
   checkoutForm.addEventListener("submit", (event) => {
     event.preventDefault();
@@ -258,7 +258,7 @@ if (checkoutForm) {
     const phone = checkoutForm.querySelector("[name=phone]");
     if (!invalid && phone && phone.value.replace(/\D/g, "").length < 9) invalid = phone;
     if (invalid) {
-      error.textContent = "Vyplňte povinné polia. Telefón potrebuje aspoň 9 číslic.";
+      error.textContent = "Заполните обязательные поля. В телефоне должно быть не меньше 9 цифр.";
       invalid.focus();
       return;
     }
@@ -283,10 +283,10 @@ if (checkoutForm) {
       })
     }).then(async (response) => {
       const body = await response.json().catch(() => ({}));
-      if (!response.ok || !body.url) throw new Error(body.error || "Platbu sa nepodarilo otvoriť.");
+      if (!response.ok || !body.url) throw new Error(body.error || "Не удалось открыть оплату.");
       window.location.href = body.url;
     }).catch((reason) => {
-      error.textContent = reason.message || "Platbu sa nepodarilo otvoriť.";
+      error.textContent = reason.message || "Не удалось открыть оплату.";
       button.disabled = false;
     });
   });
@@ -316,7 +316,7 @@ function paintPromo(message, isError) {
       return;
     }
     note.hidden = false;
-    note.textContent = "Promokód je uložený.";
+    note.textContent = "Промокод сохранён.";
   });
 }
 
@@ -327,7 +327,7 @@ document.querySelectorAll(".promo").forEach((form) => {
     const code = input.value.trim();
     if (!code) {
       localStorage.removeItem(PROMO_KEY);
-      paintPromo("Zadajte promokód.", true);
+      paintPromo("Введите промокод.", true);
       input.focus();
       return;
     }
