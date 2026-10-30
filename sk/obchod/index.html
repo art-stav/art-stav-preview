@@ -12,7 +12,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../style.css?v=33">
+  <link rel="stylesheet" href="../style.css?v=34">
 </head>
 <body>
   <a class="skip" href="#obsah">Prejsť na obsah</a>
@@ -54,8 +54,9 @@
     <div class="wrap">
       <p class="eyebrow">Materiál</p>
       <h1>Obchod</h1>
+      <div class="shop-filter" role="group"><button type="button" data-filter="all" aria-pressed="true" class="is-active">Všetko</button><button type="button" data-filter="mikrocement" aria-pressed="false">Mikrocement</button><button type="button" data-filter="laky" aria-pressed="false">Laky</button><button type="button" data-filter="grunty" aria-pressed="false">Penetrácie</button><button type="button" data-filter="hydro" aria-pressed="false">Hydroizolácia</button><button type="button" data-filter="pigmenty" aria-pressed="false">Pigmenty</button></div>
       <div class="shop-grid">
-        <a class="shop-card" href="clever-pu-120/">
+        <a class="shop-card" data-cat="hydro" href="clever-pu-120/">
           <picture>
             <source type="image/webp" srcset="../assets/img/clever-pu-120-800.webp 800w, ../assets/img/clever-pu-120.webp 1024w" sizes="(max-width: 780px) 92vw, 360px">
             <img src="../assets/img/clever-pu-120.jpg" alt="Kovové vedro Clever PU 120" width="1024" height="1024" decoding="async">
@@ -66,7 +67,7 @@
             <span class="price-tag">189 €</span>
           </div>
         </a>
-        <a class="shop-card" href="clever-pu-110/">
+        <a class="shop-card" data-cat="hydro" href="clever-pu-110/">
           <picture>
             <source type="image/webp" srcset="../assets/img/clever-pu-110-800.webp 800w, ../assets/img/clever-pu-110.webp 1024w" sizes="(max-width: 780px) 92vw, 360px">
             <img src="../assets/img/clever-pu-110.jpg" alt="Kovové vedro Clever PU 110" width="1024" height="1024" decoding="async">
@@ -75,6 +76,66 @@
             <strong>Clever PU 110</strong>
             <span>Jednozložková polyuretánová tekutá hydroizolačná membrána, UV odolná. Balenie 25 kg.</span>
             <span class="price-tag">195 €</span>
+          </div>
+        </a>
+        <a class="shop-card" data-cat="mikrocement" href="durostick-ds-259/">
+          <picture>
+            <img src="../assets/img/durostick/ds259-app1.jpg" alt="Durostick DS-259 Deco Micro Resin" width="1000" height="1000" loading="lazy" decoding="async">
+          </picture>
+          <div>
+            <strong>Durostick DS-259 Deco Micro Resin</strong>
+            <span>Dekoratívny mikrocement, základná vrstva. Vrece 20 kg.</span>
+            <span class="price-tag">Cena na vyžiadanie</span>
+          </div>
+        </a>
+        <a class="shop-card" data-cat="mikrocement" href="durostick-ds-258/">
+          <picture>
+            <img src="../assets/img/durostick/ds258-app1.jpg" alt="Durostick DS-258 Deco Micro Flex" width="1000" height="1000" loading="lazy" decoding="async">
+          </picture>
+          <div>
+            <strong>Durostick DS-258 Deco Micro Flex</strong>
+            <span>Hotová mikrocementová pasta, finálna vrstva. 5 kg / 15 kg.</span>
+            <span class="price-tag">Cena na vyžiadanie</span>
+          </div>
+        </a>
+        <a class="shop-card" data-cat="laky" href="durostick-decofin-aqua-pu/">
+          <picture>
+            <img src="../assets/img/durostick/decofin-app1.jpg" alt="Durostick Decofin Aqua PU" width="1000" height="1000" loading="lazy" decoding="async">
+          </picture>
+          <div>
+            <strong>Durostick Decofin Aqua PU</strong>
+            <span>2K vodou riediteľný polyuretánový lak, matný. 1 kg / 3 kg.</span>
+            <span class="price-tag">Cena na vyžiadanie</span>
+          </div>
+        </a>
+        <a class="shop-card" data-cat="grunty" href="durostick-aquafix/">
+          <picture>
+            <img src="../assets/img/durostick/aquafix-app1.jpg" alt="Durostick Aquafix" width="1000" height="1000" loading="lazy" decoding="async">
+          </picture>
+          <div>
+            <strong>Durostick Aquafix</strong>
+            <span>Akrylátová hĺbková penetrácia. 1 l / 5 l / 20 l.</span>
+            <span class="price-tag">Cena na vyžiadanie</span>
+          </div>
+        </a>
+        <a class="shop-card" data-cat="hydro" href="durostick-d-1-flex/">
+          <picture>
+            <img src="../assets/img/durostick/d1flex-app1.jpg" alt="Durostick D-1 Flex" width="1000" height="1000" loading="lazy" decoding="async">
+          </picture>
+          <div>
+            <strong>Durostick D-1 Flex</strong>
+            <span>Pružná cementová hydroizolácia s vláknami. 4 kg / 18 kg.</span>
+            <span class="price-tag">Cena na vyžiadanie</span>
+          </div>
+        </a>
+        <a class="shop-card" data-cat="pigmenty" href="durostick-durocolor/">
+          <picture>
+            <img src="../assets/img/durostick/durocolor-app1.jpg" alt="Durostick Durocolor" width="1000" height="1000" loading="lazy" decoding="async">
+          </picture>
+          <div>
+            <strong>Durostick Durocolor</strong>
+            <span>Pigmenty: prášok Powder-C 250 g a tekuté v striekačkách 20 ml.</span>
+            <span class="price-tag">Cena na vyžiadanie</span>
           </div>
         </a>
       </div>
@@ -124,6 +185,20 @@
     </a>
   </div>
   <script src="../js/shop.js?v=8"></script>
+
+  <script>
+  (function () {
+    var btns = document.querySelectorAll('.shop-filter button');
+    var cards = document.querySelectorAll('.shop-grid .shop-card');
+    btns.forEach(function (b) {
+      b.addEventListener('click', function () {
+        var c = b.getAttribute('data-filter');
+        btns.forEach(function (x) { x.classList.toggle('is-active', x === b); x.setAttribute('aria-pressed', x === b ? 'true' : 'false'); });
+        cards.forEach(function (k) { k.hidden = !(c === 'all' || k.getAttribute('data-cat') === c); });
+      });
+    });
+  })();
+  </script>
 <div class="lang-sw" style="position:fixed;left:12px;bottom:12px;z-index:999;background:#111;color:#fff;border-radius:20px;padding:6px 12px;font:600 13px/1 sans-serif;box-shadow:0 2px 8px rgba(0,0,0,.3)"><a href="../../obchod/index.html" style="color:#fff">RU</a> | <b style="color:#d6b98c">SK</b></div>
 </body>
 </html>
