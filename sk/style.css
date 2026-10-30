@@ -1446,4 +1446,4 @@ body:has(.cart-drawer:not([hidden])) .float { visibility: hidden; }
 .shop-filter{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 20px}
 .shop-filter button{border:1px solid #111;background:#fff;color:#111;border-radius:20px;padding:7px 14px;font:inherit;font-size:14px;cursor:pointer}
 .shop-filter button.is-active{background:#111;color:#fff}
-.photo-todo{display:flex;align-items:center;justify-content:center;aspect-ratio:1/1;width:100%;background:#f1f1f1;color:#888;font-size:15px;border-radius:8px}
+.photo-todo,.shop-card .photo-todo{display:flex;align-items:center;justify-content:center;width:100%;height:100%;aspect-ratio:1/1;margin:0;background:#f4f2ef;color:#8a8178;font-size:15px;letter-spacing:.02em;text-align:center}
