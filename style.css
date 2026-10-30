@@ -1436,3 +1436,11 @@ body:has(.cart-drawer:not([hidden])) .float { visibility: hidden; }
 
 /* «Услуги» на одной линии с остальными пунктами меню (29.10) */
 .nav-drop { display: flex; align-items: center; }
+
+/* Durostick, черновые карточки (30.10) */
+.draft-note{display:inline-block;background:#fff4d6;color:#6b4e00;border-radius:8px;padding:6px 12px;font-size:14px;margin:0 0 12px}
+.product-photo figcaption{font-size:13px;color:#777;margin-top:6px}
+.variant-row{margin:8px 0 14px}
+.product-thumbs{display:flex;gap:12px;margin:18px 0 6px;flex-wrap:wrap}
+.product-thumbs img{width:160px;height:160px;object-fit:cover;border-radius:10px}
+.koncepty-list{display:grid;gap:10px;margin-top:18px}
