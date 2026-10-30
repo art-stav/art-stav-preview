@@ -1455,7 +1455,6 @@ body:has(.cart-drawer:not([hidden])) .float { visibility: hidden; }
 .dc-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(26px,1fr));gap:5px}
 .dc-sw{aspect-ratio:1/1;border:1px solid rgba(0,0,0,.15);border-radius:5px;background:var(--c);cursor:pointer;padding:0}
 .dc-sw.is-on{outline:2px solid #111;outline-offset:2px}
-.dc-sel{margin:10px 0 2px;font-weight:600}
 .dc-hint,.dc-order{margin:4px 0 0;font-size:14px;color:#666}
 .dc-order span{color:#111;font-weight:600}
 .dc-chart{display:grid;grid-template-columns:repeat(6,1fr);gap:8px;margin:8px 0 18px}
@@ -1467,3 +1466,7 @@ body:has(.cart-drawer:not([hidden])) .float { visibility: hidden; }
 .dc-h2{font-size:18px;margin:18px 0 4px}
 .dc-foot{font-size:14px;color:#666}
 @media (max-width:780px){.dc-chart,.dc-whites{grid-template-columns:repeat(3,1fr)}}
+.dc-select{width:100%;margin:0 0 10px;padding:9px 10px;font:inherit;border:1px solid #cfcac3;border-radius:8px;background:#fff}
+.dc-cell{display:block;color:inherit;text-decoration:none;cursor:pointer}
+.dc-cell:hover{border-color:#111}
+.dc-tip{font-weight:600}
