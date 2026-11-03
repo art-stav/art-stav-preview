@@ -12,7 +12,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../../style.css?v=39">
+  <link rel="stylesheet" href="../../style.css?v=40">
 </head>
 <body>
   <a class="skip" href="#obsah">Перейти к содержанию</a>
@@ -62,7 +62,21 @@
           <h1>Durostick DS-258 Deco Micro Flex, готовая микроцементная паста (финишный слой), 5 кг / 15 кг</h1>
           <p class="product-lead">DS-258 Deco Micro Flex это готовая к применению декоративная микроцементная паста на акриловых смолах для стен, потолков, полов и мебели. Хорошо укрывает в один слой, перекрывает волосяные трещины, выдерживает расширение и сжатие основания, быстро сохнет и уже на следующий день готова под лак. Выпускается в белом, светло-сером и тёмно-сером цвете, колеруется жидкими пигментами Durocolor в шприцах (120 рецептов). Для полов с высокой нагрузкой добавляется отвердитель DS-258 Hardener.</p>
           <p class="price-plate"><strong>Цена по запросу</strong></p>
-          <p class="variant-row"><strong>Вариант:</strong> 5 кг · 15 кг</p>
+          <div class="ds-cfg" data-name="DS-258 Deco Micro Flex" data-bucket="ведро" data-shade="оттенок" data-onreq="оттенок по запросу" data-hard="отвердитель DS-258 Hardener" data-floor="для пола" data-kg="кг" data-g="г">
+            <label class="ds-lbl">Фасовка
+              <select class="dc-select ds-size"><option value="5" data-h="156">Ведро 5 кг</option><option value="15" data-h="470">Ведро 15 кг</option></select>
+            </label>
+            <label class="ds-lbl">Цвет базы
+              <select class="dc-select ds-base"><option>Белый</option><option>Светло-серый</option><option>Тёмно-серый</option></select>
+            </label>
+            <label class="dc-add"><input type="checkbox" class="ds-floor"> <span>Для пола: добавить отвердитель DS-258 Hardener (<span class="ds-hq" data-h5="156 г к ведру 5 кг" data-h15="470 г к ведру 15 кг">156 г к ведру 5 кг</span>)</span></label>
+            <h3 class="ds-h3">Цвет</h3>
+            <p class="dc-cap">Белую пасту можно тонировать жидкими пигментами Durocolor в шприцах. Дозировка: мл из карты оттенка × 0,2 на 1 кг пасты. Карту 120 оттенков добавим позже, пока укажите оттенок в заявке.</p>
+            <label class="dc-add ds-tint-row"><input type="checkbox" class="ds-tint"> <span>Тонировать пигментом Durocolor</span></label>
+            <input type="text" class="dc-select ds-shade" placeholder="Оттенок (например, светлый беж)" hidden>
+            <p class="dc-hint ds-grey" hidden>Тонировка только для белой базы.</p>
+            <p class="dc-order">Ваш выбор: <span class="ds-order"></span></p>
+          </div>
           <dl class="product-facts">
             <div>
               <dt>Упаковка</dt>
@@ -95,7 +109,7 @@
             <tr><th scope="row">Основания</th><td>Новая штукатурка, гипсокартон, цементные плиты (грунт Aquafix), крепкая старая краска (лёгкая шлифовка), дерево (Duroxyl Wood); неровные полы выровнять DS-250 / DS-252 Flex с сеткой; плитка и мрамор: кварцевый грунт DS-255 / DS-290 + DS-250 / DS-252 Flex</td></tr>
             <tr><th scope="row">Расход</th><td>0,6-0,7 кг/м² на слой</td></tr>
             <tr><th scope="row">Слои</th><td>1-2 слоя, общая толщина не более 1,2-1,4 мм; второй слой после полного высыхания первого; шлифовка зерном 180, затем 240</td></tr>
-            <tr><th scope="row">Лак</th><td>2 слоя (в душевых 3 слоя), для полов Decofin Aqua PU</td></tr>
+            <tr><th scope="row">Лак</th><td>2 слоя (в душевых 3 слоя), для пола Decofin Polyurethane, для стен Decofin Aqua PU</td></tr>
             <tr><th scope="row">Отвердитель</th><td>156 г на 5 кг пасты, 470 г на 15 кг (около 3,1 % по массе)</td></tr>
             <tr><th scope="row">Упаковка</th><td>Ведро 5 кг (120 шт. на паллете), ведро 15 кг (48 шт. на паллете); отвердитель 156 г и 470 г</td></tr>
             <tr><th scope="row">Цвета</th><td>Белый, светло-серый, тёмно-серый; колеровка Durocolor (20 базовых пигментов, 120 рецептов; доза: мл по рецепту × 0,2 на 1 кг пасты)</td></tr>
@@ -114,6 +128,17 @@
             <tr><th scope="row">Хранение</th><td>18 месяцев, защищать от солнца и мороза</td></tr>
           </tbody>
         </table>
+      </section>
+      <section class="product-section" aria-labelledby="with-title">
+        <h2 id="with-title">С этим покупают</h2>
+        <div class="with-grid">
+          <a class="with-card" href="../durostick-aquafix/"><img src="../../assets/img/durostick/aquafix-a.jpg" alt="Грунт Aquafix" width="160" height="160" loading="lazy"><strong>Грунт Aquafix</strong><span>бетон, штукатурка, гипсокартон</span></a>
+          <a class="with-card" href="../durostick-ds-255/"><img src="../../assets/img/durostick/ds255-a.jpg" alt="Кварцевый грунт DS-255" width="160" height="160" loading="lazy"><strong>Кварцевый грунт DS-255</strong><span>плитка, мрамор, мозаика</span></a>
+          <a class="with-card" href="../durostick-d-1-flex/"><img src="../../assets/img/durostick/d1flex-pack.jpg" alt="Гидроизоляция D-1 Flex" width="160" height="160" loading="lazy"><strong>Гидроизоляция D-1 Flex</strong><span>душ, ванная, мокрые зоны</span></a>
+          <a class="with-card" href="../durostick-durocolor/"><img src="../../assets/img/durostick/durocolor-pack.jpg" alt="Пигменты Durocolor" width="160" height="160" loading="lazy"><strong>Пигменты Durocolor</strong><span>тонировка пасты</span></a>
+          <a class="with-card" href="../durostick-decofin-polyurethane/"><img src="../../assets/img/durostick/dpu-pack.jpg" alt="Лак Decofin Polyurethane" width="160" height="160" loading="lazy"><strong>Лак Decofin Polyurethane</strong><span>пол</span></a>
+          <a class="with-card" href="../durostick-decofin-aqua-pu/"><img src="../../assets/img/durostick/decofin-pack.jpg" alt="Лак Decofin Aqua PU" width="160" height="160" loading="lazy"><strong>Лак Decofin Aqua PU</strong><span>стены</span></a>
+        </div>
       </section>
 
       <section class="product-section" aria-labelledby="safety-title">
@@ -179,6 +204,31 @@
     </a>
   </div>
   <script src="../../js/shop.js?v=8"></script>
+<script>
+(function () {
+  var c = document.querySelector('.ds-cfg'); if (!c) return;
+  var size = c.querySelector('.ds-size'), base = c.querySelector('.ds-base'), floor = c.querySelector('.ds-floor'),
+      tint = c.querySelector('.ds-tint'), shade = c.querySelector('.ds-shade'), hq = c.querySelector('.ds-hq'),
+      out = c.querySelector('.ds-order'), grey = c.querySelector('.ds-grey'), trow = c.querySelector('.ds-tint-row'),
+      ask = document.querySelector('.product-actions .btn');
+  function upd() {
+    var kg = size.value, h = size.options[size.selectedIndex].getAttribute('data-h');
+    hq.textContent = kg === '5' ? hq.getAttribute('data-h5') : hq.getAttribute('data-h15');
+    var white = base.selectedIndex === 0;
+    trow.hidden = !white; grey.hidden = white;
+    if (!white) { tint.checked = false; }
+    shade.hidden = !tint.checked;
+    var s = c.getAttribute('data-name') + ', ' + c.getAttribute('data-bucket') + ' ' + kg + ' ' + c.getAttribute('data-kg') + ', ' + base.value.toLowerCase();
+    if (tint.checked) { s += ', ' + (shade.value.trim() ? c.getAttribute('data-shade') + ' ' + shade.value.trim() : c.getAttribute('data-onreq')); }
+    if (floor.checked) { s += ', + ' + c.getAttribute('data-hard') + ' ' + h + ' ' + c.getAttribute('data-g') + ' (' + c.getAttribute('data-floor') + ')'; }
+    out.textContent = s;
+    if (ask) { ask.href = '../../kontakt.html?zakaz=' + encodeURIComponent(s); }
+  }
+  [size, base, floor, tint].forEach(function (x) { x.addEventListener('change', upd); });
+  shade.addEventListener('input', upd);
+  upd();
+})();
+</script>
 <div class="lang-sw" style="position:fixed;left:12px;bottom:12px;z-index:999;background:#111;color:#fff;border-radius:20px;padding:6px 12px;font:600 13px/1 sans-serif;box-shadow:0 2px 8px rgba(0,0,0,.3)"><b style="color:#d6b98c">RU</b> | <a href="../../sk/obchod/durostick-ds-258/index.html" style="color:#fff">SK</a></div>
 </body>
 </html>
