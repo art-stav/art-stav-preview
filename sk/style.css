@@ -1485,3 +1485,16 @@ body:has(.cart-drawer:not([hidden])) .float { visibility: hidden; }
 .with-card:hover{border-color:#111}
 .with-card img{width:100%;height:auto;aspect-ratio:1/1;object-fit:cover;border-radius:8px}
 .with-card span{font-size:13px;color:#666}
+
+/* 16.11: блок «Опасность» (GHS) и подписи фото */
+.danger-box{border:2px solid #e00000;border-radius:10px;padding:14px 16px;margin:14px 0 16px;background:#fff7f7}
+.danger-box p{margin:6px 0;font-size:14px;line-height:1.45}
+.danger-h{font-weight:800;color:#c00000;font-size:16px!important;margin-top:0!important}
+.ghs-row{display:flex;gap:10px;margin:8px 0}
+.ghs-row .ghs{width:72px;height:72px;flex:0 0 auto}
+.danger-note{font-size:12px!important;color:#555}
+.product-thumbs figure{margin:0;width:160px}
+.product-thumbs figure img{width:160px;height:160px;object-fit:cover;border-radius:10px}
+.product-thumbs figcaption{font-size:12px;color:#555;line-height:1.35;margin-top:6px}
+
+.ds-hard-img{width:44px;height:44px;object-fit:contain;border:1px solid #ddd;border-radius:6px;background:#fff;vertical-align:middle;margin:0 4px}
