@@ -1498,3 +1498,24 @@ body:has(.cart-drawer:not([hidden])) .float { visibility: hidden; }
 .product-thumbs figcaption{font-size:12px;color:#555;line-height:1.35;margin-top:6px}
 
 .ds-hard-img{width:44px;height:44px;object-fit:contain;border:1px solid #ddd;border-radius:6px;background:#fff;vertical-align:middle;margin:0 4px}
+
+/* 16.11: тонировка DS-258 по карте Durocolor, шприцы поштучно */
+.dt-cfg,.dt-syr{margin:18px 0;padding:14px;border:1px solid #e5e2dd;border-radius:10px;font-feature-settings:"calt" 0}
+.dt-opts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin:6px 0 10px}
+.dt-opt{display:flex;gap:8px;align-items:flex-start;border:1px solid #d8d4cd;border-radius:8px;padding:8px 10px;cursor:pointer}
+.dt-opt:has(input:checked){border-color:#111;background:#faf8f5}
+.dt-opt b{display:block;font-size:14px}.dt-opt small{display:block;font-size:12px;color:#777}
+.dt-note{font-size:13px;color:#6b4e00;background:#fff4d6;border-radius:8px;padding:6px 10px;margin:4px 0 10px}
+.dt-want,.dt-reset{border:1px solid #111;background:#fff;border-radius:16px;padding:3px 10px;font:inherit;font-size:13px;cursor:pointer;margin-left:4px}
+.dt-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(38px,1fr));gap:4px;margin:8px 0;max-height:300px;overflow:auto;padding:2px}
+.dt-sw{aspect-ratio:1/1;border:1px solid rgba(0,0,0,.12);border-radius:5px;cursor:pointer;padding:0;display:flex;align-items:flex-end;justify-content:flex-end}
+.dt-sw span{font-size:10px;color:#555;padding:1px 3px}
+.dt-sw.is-on{outline:2px solid #111;outline-offset:1px}
+.dt-sel{font-weight:600;font-size:14px;margin:6px 0}
+.dt-list{margin:4px 0 8px 18px;padding:0;font-size:13px}
+.dt-warn{font-size:12px;color:#555;margin:6px 0 10px}
+.dt-qlist{list-style:none;margin:6px 0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:4px 14px}
+.dt-qlist li{display:flex;justify-content:space-between;align-items:center;gap:8px;font-size:13px;border-bottom:1px solid #eee;padding:3px 0}
+.dt-q{width:60px;padding:3px 6px;border:1px solid #ccc;border-radius:6px;font:inherit}
+.dt-by{margin:8px 0}.dt-by summary{cursor:pointer;font-weight:600;font-size:14px}
+@media(max-width:560px){.dt-opts{grid-template-columns:1fr}}
